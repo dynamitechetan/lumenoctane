@@ -14,10 +14,10 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ~8.0 || ~8.1",
+        "php": "^7.4 || ~8.0 || ~8.1 || ~8.3",
         "laminas/laminas-diactoros": "^2.5",
         "nesbot/carbon": "^2.60",
-        "symfony/psr-http-message-bridge": "^2.0"
+        "symfony/psr-http-message-bridge": "^7.1"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.2",
