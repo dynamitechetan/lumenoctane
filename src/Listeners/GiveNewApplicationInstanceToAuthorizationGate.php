@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Listeners;
+namespace Twid\Octane\Listeners;
 
 use Illuminate\Contracts\Auth\Access\Gate;
 

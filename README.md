@@ -32,7 +32,7 @@ Add the following snippet to the bootstrap/app.php file under the providers sect
 
 ```
 // Add this line
-$app->register(Laravel\Octane\OctaneServiceProvider::class);
+$app->register(Twid\Octane\OctaneServiceProvider::class);
 ```
 
 

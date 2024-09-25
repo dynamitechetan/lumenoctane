@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
-use Laravel\Octane\Contracts\DispatchesCoroutines;
+use Twid\Octane\Contracts\DispatchesCoroutines;
 
 class SequentialCoroutineDispatcher implements DispatchesCoroutines
 {

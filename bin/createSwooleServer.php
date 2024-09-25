@@ -12,7 +12,7 @@ try {
             : SWOOLE_SOCK_TCP,
     );
 } catch (Throwable $e) {
-    Laravel\Octane\Stream::shutdown($e);
+    Twid\Octane\Stream::shutdown($e);
 
     exit(1);
 }

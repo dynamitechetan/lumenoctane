@@ -1,6 +1,6 @@
 <?php
 
-use Laravel\Octane\Exceptions\DdException;
+use Twid\Octane\Exceptions\DdException;
 
 ini_set('display_errors', 'stderr');
 

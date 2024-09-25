@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Closure;
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;
 use Laravel\Lumen\Application;
-use Laravel\Octane\Contracts\Client;
-use Laravel\Octane\Contracts\ServesStaticFiles;
-use Laravel\Octane\Contracts\Worker as WorkerContract;
-use Laravel\Octane\Events\TaskReceived;
-use Laravel\Octane\Events\TaskTerminated;
-use Laravel\Octane\Events\TickReceived;
-use Laravel\Octane\Events\TickTerminated;
-use Laravel\Octane\Events\WorkerErrorOccurred;
-use Laravel\Octane\Events\WorkerStarting;
-use Laravel\Octane\Events\WorkerStopping;
-use Laravel\Octane\Exceptions\TaskExceptionResult;
-use Laravel\Octane\Swoole\TaskResult;
+use Twid\Octane\Contracts\Client;
+use Twid\Octane\Contracts\ServesStaticFiles;
+use Twid\Octane\Contracts\Worker as WorkerContract;
+use Twid\Octane\Events\TaskReceived;
+use Twid\Octane\Events\TaskTerminated;
+use Twid\Octane\Events\TickReceived;
+use Twid\Octane\Events\TickTerminated;
+use Twid\Octane\Events\WorkerErrorOccurred;
+use Twid\Octane\Events\WorkerStarting;
+use Twid\Octane\Events\WorkerStopping;
+use Twid\Octane\Exceptions\TaskExceptionResult;
+use Twid\Octane\Swoole\TaskResult;
 use RuntimeException;
 use Throwable;
 
@@ -67,7 +67,7 @@ class Worker implements WorkerContract
      * Handle an incoming request and send the response to the client.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return void
      */
     public function handle(Request $request, RequestContext $context): void
@@ -195,7 +195,7 @@ class Worker implements WorkerContract
      * @param  \Throwable  $e
      * @param  \Laravel\Lumen\Application  $app
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @param  bool  $hasResponded
      * @return void
      */

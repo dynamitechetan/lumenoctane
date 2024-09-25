@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Octane\Events;
+namespace Twid\Octane\Events;
 
 use Laravel\Lumen\Application;
 use Illuminate\Http\Request;
-use Laravel\Octane\Contracts\OperationTerminated;
+use Twid\Octane\Contracts\OperationTerminated;
 use Symfony\Component\HttpFoundation\Response;
 
 class RequestTerminated implements OperationTerminated

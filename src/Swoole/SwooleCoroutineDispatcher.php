@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Octane\Swoole;
+namespace Twid\Octane\Swoole;
 
-use Laravel\Octane\Contracts\DispatchesCoroutines;
+use Twid\Octane\Contracts\DispatchesCoroutines;
 use Swoole\Coroutine;
 use Swoole\Coroutine\WaitGroup;
 

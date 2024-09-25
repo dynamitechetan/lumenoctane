@@ -1,16 +1,16 @@
 <?php
 
-namespace Laravel\Octane\Swoole;
+namespace Twid\Octane\Swoole;
 
 use DateTime;
 use Laravel\Lumen\Application;
 use Illuminate\Http\Request;
-use Laravel\Octane\Contracts\Client;
-use Laravel\Octane\Contracts\ServesStaticFiles;
-use Laravel\Octane\MimeType;
-use Laravel\Octane\Octane;
-use Laravel\Octane\OctaneResponse;
-use Laravel\Octane\RequestContext;
+use Twid\Octane\Contracts\Client;
+use Twid\Octane\Contracts\ServesStaticFiles;
+use Twid\Octane\MimeType;
+use Twid\Octane\Octane;
+use Twid\Octane\OctaneResponse;
+use Twid\Octane\RequestContext;
 use Swoole\Http\Response as SwooleResponse;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -33,7 +33,7 @@ class SwooleClient implements Client, ServesStaticFiles
     /**
      * Marshal the given request context into an Illuminate request.
      *
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return array
      */
     public function marshalRequest(RequestContext $context): array
@@ -51,7 +51,7 @@ class SwooleClient implements Client, ServesStaticFiles
      * Determine if the request can be served as a static file.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return bool
      */
     public function canServeRequestAsStaticFile(Request $request, RequestContext $context): bool
@@ -131,7 +131,7 @@ class SwooleClient implements Client, ServesStaticFiles
      * Serve the static file that was requested.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return void
      */
     public function serveStaticFile(Request $request, RequestContext $context): void
@@ -148,8 +148,8 @@ class SwooleClient implements Client, ServesStaticFiles
     /**
      * Send the response to the server.
      *
-     * @param  \Laravel\Octane\RequestContext  $context
-     * @param  \Laravel\Octane\OctaneResponse  $octaneResponse
+     * @param  \Twid\Octane\RequestContext  $context
+     * @param  \Twid\Octane\OctaneResponse  $octaneResponse
      * @return void
      */
     public function respond(RequestContext $context, OctaneResponse $octaneResponse): void
@@ -206,7 +206,7 @@ class SwooleClient implements Client, ServesStaticFiles
     /**
      * Send the content from the Illuminate response to the Swoole response.
      *
-     * @param  \Laravel\Octane\OctaneResponse  $response
+     * @param  \Twid\Octane\OctaneResponse  $response
      * @param  \Swoole\Http\Response  $response
      * @return void
      */
@@ -265,7 +265,7 @@ class SwooleClient implements Client, ServesStaticFiles
      * @param  \Throwable  $e
      * @param  \Laravel\Lumen\Application  $app
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return void
      */
     public function error(Throwable $e, Application $app, Request $request, RequestContext $context): void

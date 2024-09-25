@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Octane\Testing\Fakes;
+namespace Twid\Octane\Testing\Fakes;
 
 use Laravel\Lumen\Application;
 use Illuminate\Http\Request;
-use Laravel\Octane\Contracts\Client;
-use Laravel\Octane\OctaneResponse;
-use Laravel\Octane\RequestContext;
+use Twid\Octane\Contracts\Client;
+use Twid\Octane\OctaneResponse;
+use Twid\Octane\RequestContext;
 use Throwable;
 
 class FakeClient implements Client

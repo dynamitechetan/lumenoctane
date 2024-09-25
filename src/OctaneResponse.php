@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Symfony\Component\HttpFoundation\Response;
 

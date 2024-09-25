@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Concerns;
+namespace Twid\Octane\Concerns;
 
 use Closure;
 use Illuminate\Http\Request;

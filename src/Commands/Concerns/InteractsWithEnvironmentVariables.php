@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Octane\Commands\Concerns;
+namespace Twid\Octane\Commands\Concerns;
 
 use Dotenv\Exception\InvalidPathException;
 use Dotenv\Parser;
 use Illuminate\Support\Env;
-use Laravel\Octane\Env\StoreBuilder;
+use Twid\Octane\Env\StoreBuilder;
 
 trait InteractsWithEnvironmentVariables
 {

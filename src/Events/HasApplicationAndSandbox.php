@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Events;
+namespace Twid\Octane\Events;
 
 use Laravel\Lumen\Application;
 

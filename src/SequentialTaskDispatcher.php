@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
-use Laravel\Octane\Contracts\DispatchesTasks;
-use Laravel\Octane\Exceptions\TaskExceptionResult;
+use Twid\Octane\Contracts\DispatchesTasks;
+use Twid\Octane\Exceptions\TaskExceptionResult;
 use Throwable;
 
 class SequentialTaskDispatcher implements DispatchesTasks
@@ -17,8 +17,8 @@ class SequentialTaskDispatcher implements DispatchesTasks
      * @param  int  $waitMilliseconds
      * @return array
      *
-     * @throws \Laravel\Octane\Exceptions\TaskException
-     * @throws \Laravel\Octane\Exceptions\TaskTimeoutException
+     * @throws \Twid\Octane\Exceptions\TaskException
+     * @throws \Twid\Octane\Exceptions\TaskTimeoutException
      */
     public function resolve(array $tasks, int $waitMilliseconds = 1): array
     {

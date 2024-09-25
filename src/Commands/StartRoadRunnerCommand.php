@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
-use Laravel\Octane\Str;
+use Twid\Octane\Str;
 use InvalidArgumentException;
-use Laravel\Octane\RoadRunner\ServerProcessInspector;
-use Laravel\Octane\RoadRunner\ServerStateFile;
+use Twid\Octane\RoadRunner\ServerProcessInspector;
+use Twid\Octane\RoadRunner\ServerStateFile;
 //use Symfony\Component\Console\Command\SignalableCommandInterface;
 use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Process\Process;
@@ -49,8 +49,8 @@ class StartRoadRunnerCommand extends Command
     /**
      * Handle the command.
      *
-     * @param  \Laravel\Octane\RoadRunner\ServerProcessInspector  $inspector
-     * @param  \Laravel\Octane\RoadRunner\ServerStateFile  $serverStateFile
+     * @param  \Twid\Octane\RoadRunner\ServerProcessInspector  $inspector
+     * @param  \Twid\Octane\RoadRunner\ServerStateFile  $serverStateFile
      * @return int
      */
     public function handle(ServerProcessInspector $inspector, ServerStateFile $serverStateFile)
@@ -106,7 +106,7 @@ class StartRoadRunnerCommand extends Command
     /**
      * Write the RoadRunner server state file.
      *
-     * @param  \Laravel\Octane\RoadRunner\ServerStateFile  $serverStateFile
+     * @param  \Twid\Octane\RoadRunner\ServerStateFile  $serverStateFile
      * @return void
      */
     protected function writeServerStateFile(

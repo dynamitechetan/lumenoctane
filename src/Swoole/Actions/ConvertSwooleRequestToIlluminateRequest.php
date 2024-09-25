@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Swoole\Actions;
+namespace Twid\Octane\Swoole\Actions;
 
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\ParameterBag;

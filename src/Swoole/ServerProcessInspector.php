@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Octane\Swoole;
+namespace Twid\Octane\Swoole;
 
-use Laravel\Octane\Exec;
+use Twid\Octane\Exec;
 
 class ServerProcessInspector
 {

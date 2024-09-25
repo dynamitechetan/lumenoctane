@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Commands\Concerns;
+namespace Twid\Octane\Commands\Concerns;
 
 use InvalidArgumentException;
-use Laravel\Octane\Exceptions\ServerShutdownException;
+use Twid\Octane\Exceptions\ServerShutdownException;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
 
@@ -13,7 +13,7 @@ trait InteractsWithServers
      * Run the given server process.
      *
      * @param  \Symfony\Component\Process\Process  $server
-     * @param  \Laravel\Octane\Swoole\ServerProcessInspector|\Laravel\Octane\RoadRunner\ServerProcessInspector  $inspector
+     * @param  \Twid\Octane\Swoole\ServerProcessInspector|\Twid\Octane\RoadRunner\ServerProcessInspector  $inspector
      * @param  string  $type
      * @return int
      */

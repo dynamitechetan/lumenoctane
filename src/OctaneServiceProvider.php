@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -10,21 +10,21 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Octane\Cache\OctaneArrayStore;
-use Laravel\Octane\Cache\OctaneStore;
-use Laravel\Octane\Contracts\DispatchesCoroutines;
-use Laravel\Octane\Events\TickReceived;
-use Laravel\Octane\Exceptions\DdException;
-use Laravel\Octane\Exceptions\TaskException;
-use Laravel\Octane\Exceptions\TaskTimeoutException;
-use Laravel\Octane\Facades\Octane as OctaneFacade;
-use Laravel\Octane\RoadRunner\ServerProcessInspector as RoadRunnerServerProcessInspector;
-use Laravel\Octane\RoadRunner\ServerStateFile as RoadRunnerServerStateFile;
-use Laravel\Octane\Swoole\ServerProcessInspector as SwooleServerProcessInspector;
-use Laravel\Octane\Swoole\ServerStateFile as SwooleServerStateFile;
-use Laravel\Octane\Swoole\SignalDispatcher;
-use Laravel\Octane\Swoole\SwooleCoroutineDispatcher;
-use Laravel\Octane\Swoole\SwooleTaskDispatcher;
+use Twid\Octane\Cache\OctaneArrayStore;
+use Twid\Octane\Cache\OctaneStore;
+use Twid\Octane\Contracts\DispatchesCoroutines;
+use Twid\Octane\Events\TickReceived;
+use Twid\Octane\Exceptions\DdException;
+use Twid\Octane\Exceptions\TaskException;
+use Twid\Octane\Exceptions\TaskTimeoutException;
+use Twid\Octane\Facades\Octane as OctaneFacade;
+use Twid\Octane\RoadRunner\ServerProcessInspector as RoadRunnerServerProcessInspector;
+use Twid\Octane\RoadRunner\ServerStateFile as RoadRunnerServerStateFile;
+use Twid\Octane\Swoole\ServerProcessInspector as SwooleServerProcessInspector;
+use Twid\Octane\Swoole\ServerStateFile as SwooleServerStateFile;
+use Twid\Octane\Swoole\SignalDispatcher;
+use Twid\Octane\Swoole\SwooleCoroutineDispatcher;
+use Twid\Octane\Swoole\SwooleTaskDispatcher;
 
 class OctaneServiceProvider extends ServiceProvider
 {

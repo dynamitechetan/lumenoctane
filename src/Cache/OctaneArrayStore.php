@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Cache;
+namespace Twid\Octane\Cache;
 
 use Closure;
 use Illuminate\Cache\ArrayStore;

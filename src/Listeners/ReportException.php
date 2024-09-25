@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Octane\Listeners;
+namespace Twid\Octane\Listeners;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Octane\Exceptions\DdException;
-use Laravel\Octane\Stream;
+use Twid\Octane\Exceptions\DdException;
+use Twid\Octane\Stream;
 
 class ReportException
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Octane\Swoole;
+namespace Twid\Octane\Swoole;
 
 use Closure;
 use Exception;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Http;
-use Laravel\Octane\Contracts\DispatchesTasks;
-use Laravel\Octane\Exceptions\TaskExceptionResult;
-use Laravel\Octane\Exceptions\TaskTimeoutException;
+use Twid\Octane\Contracts\DispatchesTasks;
+use Twid\Octane\Exceptions\TaskExceptionResult;
+use Twid\Octane\Exceptions\TaskTimeoutException;
 use Laravel\SerializableClosure\SerializableClosure;
 
 class SwooleHttpTaskDispatcher implements DispatchesTasks
@@ -30,8 +30,8 @@ class SwooleHttpTaskDispatcher implements DispatchesTasks
      * @param  int  $waitMilliseconds
      * @return array
      *
-     * @throws \Laravel\Octane\Exceptions\TaskException
-     * @throws \Laravel\Octane\Exceptions\TaskTimeoutException
+     * @throws \Twid\Octane\Exceptions\TaskException
+     * @throws \Twid\Octane\Exceptions\TaskTimeoutException
      */
     public function resolve(array $tasks, int $waitMilliseconds = 3000): array
     {

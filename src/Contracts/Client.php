@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Octane\Contracts;
+namespace Twid\Octane\Contracts;
 
 use Laravel\Lumen\Application;;
 use Illuminate\Http\Request;
-use Laravel\Octane\OctaneResponse;
-use Laravel\Octane\RequestContext;
+use Twid\Octane\OctaneResponse;
+use Twid\Octane\RequestContext;
 use Throwable;
 
 interface Client
@@ -13,7 +13,7 @@ interface Client
     /**
      * Marshal the given request context into an Illuminate request.
      *
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return array
      */
     public function marshalRequest(RequestContext $context): array;
@@ -21,8 +21,8 @@ interface Client
     /**
      * Send the response to the server.
      *
-     * @param  \Laravel\Octane\RequestContext  $context
-     * @param  \Laravel\Octane\OctaneResponse  $response
+     * @param  \Twid\Octane\RequestContext  $context
+     * @param  \Twid\Octane\OctaneResponse  $response
      * @return void
      */
     public function respond(RequestContext $context, OctaneResponse $response): void;
@@ -33,7 +33,7 @@ interface Client
      * @param  \Throwable  $e
      * @param  \Laravel\Lumen\Application;  $app
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return void
      */
     public function error(Throwable $e, Application $app, Request $request, RequestContext $context): void;

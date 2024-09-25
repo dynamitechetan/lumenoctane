@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\RoadRunner\Concerns;
+namespace Twid\Octane\RoadRunner\Concerns;
 
 use Illuminate\Support\Str;
 use Symfony\Component\Process\ExecutableFinder;

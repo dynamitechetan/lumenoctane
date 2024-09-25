@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Illuminate\Contracts\Http\Kernel as HttpKernelContract;
 use Laravel\Lumen\Application;

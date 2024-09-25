@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;

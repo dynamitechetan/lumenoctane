@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Testing\Fakes;
+namespace Twid\Octane\Testing\Fakes;
 
-use Laravel\Octane\RequestContext;
-use Laravel\Octane\Worker;
+use Twid\Octane\RequestContext;
+use Twid\Octane\Worker;
 
 class FakeWorker extends Worker
 {

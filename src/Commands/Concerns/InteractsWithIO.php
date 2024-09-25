@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Octane\Commands\Concerns;
+namespace Twid\Octane\Commands\Concerns;
 
 use Illuminate\Console\OutputStyle;
 use Illuminate\Support\Str;
-use Laravel\Octane\Exceptions\DdException;
-use Laravel\Octane\Exceptions\ServerShutdownException;
-use Laravel\Octane\Exceptions\WorkerException;
-use Laravel\Octane\WorkerExceptionInspector;
+use Twid\Octane\Exceptions\DdException;
+use Twid\Octane\Exceptions\ServerShutdownException;
+use Twid\Octane\Exceptions\WorkerException;
+use Twid\Octane\WorkerExceptionInspector;
 use NunoMaduro\Collision\Writer;
 use Symfony\Component\VarDumper\VarDumper;
 

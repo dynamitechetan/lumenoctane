@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Swoole;
+namespace Twid\Octane\Swoole;
 
 use Swoole\Process;
 

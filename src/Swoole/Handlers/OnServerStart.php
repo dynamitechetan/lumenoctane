@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Octane\Swoole\Handlers;
+namespace Twid\Octane\Swoole\Handlers;
 
-use Laravel\Octane\Swoole\Actions\EnsureRequestsDontExceedMaxExecutionTime;
-use Laravel\Octane\Swoole\ServerStateFile;
-use Laravel\Octane\Swoole\SwooleExtension;
+use Twid\Octane\Swoole\Actions\EnsureRequestsDontExceedMaxExecutionTime;
+use Twid\Octane\Swoole\ServerStateFile;
+use Twid\Octane\Swoole\SwooleExtension;
 use Swoole\Timer;
 
 class OnServerStart

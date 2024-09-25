@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Commands\Concerns;
+namespace Twid\Octane\Commands\Concerns;
 
 use Symfony\Component\Console\Terminal;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
 use Illuminate\Console\Command as BaseCommand;
-use Laravel\Octane\Commands\Concerns\InteractsWithIO;
-use Laravel\Octane\Stringable;
+use Twid\Octane\Commands\Concerns\InteractsWithIO;
+use Twid\Octane\Stringable;
 
 class Command extends BaseCommand
 {

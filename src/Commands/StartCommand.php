@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
 //use Symfony\Component\Console\Command\SignalableCommandInterface;
 

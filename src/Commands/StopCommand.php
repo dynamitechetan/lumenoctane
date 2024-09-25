@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
-use Laravel\Octane\RoadRunner\ServerProcessInspector as RoadRunnerServerProcessInspector;
-use Laravel\Octane\RoadRunner\ServerStateFile as RoadRunnerServerStateFile;
-use Laravel\Octane\Swoole\ServerProcessInspector as SwooleServerProcessInspector;
-use Laravel\Octane\Swoole\ServerStateFile as SwooleServerStateFile;
+use Twid\Octane\RoadRunner\ServerProcessInspector as RoadRunnerServerProcessInspector;
+use Twid\Octane\RoadRunner\ServerStateFile as RoadRunnerServerStateFile;
+use Twid\Octane\Swoole\ServerProcessInspector as SwooleServerProcessInspector;
+use Twid\Octane\Swoole\ServerStateFile as SwooleServerStateFile;
 
 class StopCommand extends Command
 {

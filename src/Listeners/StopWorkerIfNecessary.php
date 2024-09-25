@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Listeners;
+namespace Twid\Octane\Listeners;
 
-use Laravel\Octane\Contracts\Client;
-use Laravel\Octane\Contracts\StoppableClient;
+use Twid\Octane\Contracts\Client;
+use Twid\Octane\Contracts\StoppableClient;
 
 class StopWorkerIfNecessary
 {

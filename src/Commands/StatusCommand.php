@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
-use Laravel\Octane\RoadRunner\ServerProcessInspector as RoadRunnerServerProcessInspector;
-use Laravel\Octane\Swoole\ServerProcessInspector as SwooleServerProcessInspector;
+use Twid\Octane\RoadRunner\ServerProcessInspector as RoadRunnerServerProcessInspector;
+use Twid\Octane\Swoole\ServerProcessInspector as SwooleServerProcessInspector;
 
 class StatusCommand extends Command
 {

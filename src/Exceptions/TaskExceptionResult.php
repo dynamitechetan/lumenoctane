@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Exceptions;
+namespace Twid\Octane\Exceptions;
 
 use Laravel\SerializableClosure\Support\ClosureStream;
 
@@ -24,7 +24,7 @@ class TaskExceptionResult
      * Creates a new task exception result from the given throwable.
      *
      * @param  \Throwable  $throwable
-     * @return \Laravel\Octane\Exceptions\TaskExceptionResult
+     * @return \Twid\Octane\Exceptions\TaskExceptionResult
      */
     public static function from($throwable)
     {
@@ -44,7 +44,7 @@ class TaskExceptionResult
     /**
      * Gets the original throwable.
      *
-     * @return \Laravel\Octane\Exceptions\TaskException|\Laravel\Octane\Exceptions\DdException
+     * @return \Twid\Octane\Exceptions\TaskException|\Twid\Octane\Exceptions\DdException
      */
     public function getOriginal()
     {

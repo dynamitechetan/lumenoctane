@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Octane\Swoole\Handlers;
+namespace Twid\Octane\Swoole\Handlers;
 
-use Laravel\Octane\ApplicationFactory;
-use Laravel\Octane\Stream;
-use Laravel\Octane\Swoole\SwooleClient;
-use Laravel\Octane\Swoole\SwooleExtension;
-use Laravel\Octane\Swoole\WorkerState;
-use Laravel\Octane\Worker;
+use Twid\Octane\ApplicationFactory;
+use Twid\Octane\Stream;
+use Twid\Octane\Swoole\SwooleClient;
+use Twid\Octane\Swoole\SwooleExtension;
+use Twid\Octane\Swoole\WorkerState;
+use Twid\Octane\Worker;
 use Swoole\Http\Server;
 use Throwable;
 
@@ -60,7 +60,7 @@ class OnWorkerStart
      * Boot the Octane worker and application.
      *
      * @param  \Swoole\Http\Server  $server
-     * @return \Laravel\Octane\Worker
+     * @return \Twid\Octane\Worker
      */
     protected function bootWorker($server)
     {

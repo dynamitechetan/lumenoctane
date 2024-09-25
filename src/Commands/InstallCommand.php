@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
 use Illuminate\Support\Facades\File;
-use Laravel\Octane\Str;
-use Laravel\Octane\Swoole\SwooleExtension;
+use Twid\Octane\Str;
+use Twid\Octane\Swoole\SwooleExtension;
 
 class InstallCommand extends Command
 {

@@ -41,10 +41,10 @@
        
         "laravel": {
             "providers": [
-                "Laravel\\Octane\\OctaneServiceProvider"
+                "Twid\\Octane\\OctaneServiceProvider"
             ],
             "aliases": {
-                "Octane": "Laravel\\Octane\\Facades\\Octane"
+                "Octane": "Twid\\Octane\\Facades\\Octane"
             }
         }
     },

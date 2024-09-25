@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Contracts;
+namespace Twid\Octane\Contracts;
 
 interface DispatchesTasks
 {
@@ -13,8 +13,8 @@ interface DispatchesTasks
      * @param  int  $waitMilliseconds
      * @return array
      *
-     * @throws \Laravel\Octane\Exceptions\TaskException
-     * @throws \Laravel\Octane\Exceptions\TaskTimeoutException
+     * @throws \Twid\Octane\Exceptions\TaskException
+     * @throws \Twid\Octane\Exceptions\TaskTimeoutException
      */
     public function resolve(array $tasks, int $waitMilliseconds = 3000): array;
 

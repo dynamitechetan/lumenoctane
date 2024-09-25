@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Octane\Concerns;
+namespace Twid\Octane\Concerns;
 
-use Laravel\Octane\Contracts\DispatchesTasks;
-use Laravel\Octane\SequentialTaskDispatcher;
-use Laravel\Octane\Swoole\ServerStateFile;
-use Laravel\Octane\Swoole\SwooleHttpTaskDispatcher;
-use Laravel\Octane\Swoole\SwooleTaskDispatcher;
+use Twid\Octane\Contracts\DispatchesTasks;
+use Twid\Octane\SequentialTaskDispatcher;
+use Twid\Octane\Swoole\ServerStateFile;
+use Twid\Octane\Swoole\SwooleHttpTaskDispatcher;
+use Twid\Octane\Swoole\SwooleTaskDispatcher;
 use Swoole\Http\Server;
 
 trait ProvidesConcurrencySupport
@@ -20,8 +20,8 @@ trait ProvidesConcurrencySupport
      * @param  int  $waitMilliseconds
      * @return array
      *
-     * @throws \Laravel\Octane\Exceptions\TaskException
-     * @throws \Laravel\Octane\Exceptions\TaskTimeoutException
+     * @throws \Twid\Octane\Exceptions\TaskException
+     * @throws \Twid\Octane\Exceptions\TaskTimeoutException
      */
     public function concurrently(array $tasks, int $waitMilliseconds = 3000)
     {
@@ -31,7 +31,7 @@ trait ProvidesConcurrencySupport
     /**
      * Get the task dispatcher.
      *
-     * @return \Laravel\Octane\Contracts\DispatchesTasks
+     * @return \Twid\Octane\Contracts\DispatchesTasks
      */
     public function tasks()
     {

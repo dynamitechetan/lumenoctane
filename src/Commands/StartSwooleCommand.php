@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Octane\Commands;
+namespace Twid\Octane\Commands;
 
-use Laravel\Octane\Str;
+use Twid\Octane\Str;
 
-use Laravel\Octane\Swoole\ServerProcessInspector;
-use Laravel\Octane\Swoole\ServerStateFile;
-use Laravel\Octane\Swoole\SwooleExtension;
+use Twid\Octane\Swoole\ServerProcessInspector;
+use Twid\Octane\Swoole\ServerStateFile;
+use Twid\Octane\Swoole\SwooleExtension;
 //use Symfony\Component\Console\Command\SignalableCommandInterface;
 use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Process\Process;
@@ -47,9 +47,9 @@ class StartSwooleCommand extends Command
     /**
      * Handle the command.
      *
-     * @param  \Laravel\Octane\Swoole\ServerProcessInspector  $inspector
-     * @param  \Laravel\Octane\Swoole\ServerStateFile  $serverStateFile
-     * @param  \Laravel\Octane\Swoole\SwooleExtension  $extension
+     * @param  \Twid\Octane\Swoole\ServerProcessInspector  $inspector
+     * @param  \Twid\Octane\Swoole\ServerStateFile  $serverStateFile
+     * @param  \Twid\Octane\Swoole\SwooleExtension  $extension
      * @return int
      */
     public function handle(
@@ -96,8 +96,8 @@ class StartSwooleCommand extends Command
     /**
      * Write the Swoole server state file.
      *
-     * @param  \Laravel\Octane\Swoole\ServerStateFile  $serverStateFile
-     * @param  \Laravel\Octane\Swoole\SwooleExtension  $extension
+     * @param  \Twid\Octane\Swoole\ServerStateFile  $serverStateFile
+     * @param  \Twid\Octane\Swoole\SwooleExtension  $extension
      * @return void
      */
     protected function writeServerStateFile(
@@ -121,7 +121,7 @@ class StartSwooleCommand extends Command
     /**
      * Get the default Swoole server options.
      *
-     * @param  \Laravel\Octane\Swoole\SwooleExtension  $extension
+     * @param  \Twid\Octane\Swoole\SwooleExtension  $extension
      * @return array
      */
     protected function defaultServerOptions(SwooleExtension $extension)
@@ -145,7 +145,7 @@ class StartSwooleCommand extends Command
     /**
      * Get the number of workers that should be started.
      *
-     * @param  \Laravel\Octane\Swoole\SwooleExtension  $extension
+     * @param  \Twid\Octane\Swoole\SwooleExtension  $extension
      * @return int
      */
     protected function workerCount(SwooleExtension $extension)
@@ -158,7 +158,7 @@ class StartSwooleCommand extends Command
     /**
      * Get the number of task workers that should be started.
      *
-     * @param  \Laravel\Octane\Swoole\SwooleExtension  $extension
+     * @param  \Twid\Octane\Swoole\SwooleExtension  $extension
      * @return int
      */
     protected function taskWorkerCount(SwooleExtension $extension)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Tables;
+namespace Twid\Octane\Tables;
 
 use Swoole\Table;
 

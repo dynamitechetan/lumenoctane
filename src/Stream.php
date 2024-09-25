@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Laravel\SerializableClosure\Support\ClosureStream;
 use Throwable;

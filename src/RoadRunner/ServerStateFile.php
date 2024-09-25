@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\RoadRunner;
+namespace Twid\Octane\RoadRunner;
 
 use RuntimeException;
 

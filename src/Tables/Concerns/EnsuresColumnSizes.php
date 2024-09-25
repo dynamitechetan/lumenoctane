@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Tables\Concerns;
+namespace Twid\Octane\Tables\Concerns;
 
 use Illuminate\Support\Arr;
-use Laravel\Octane\Exceptions\ValueTooLargeForColumnException;
+use Twid\Octane\Exceptions\ValueTooLargeForColumnException;
 use Swoole\Table;
 
 trait EnsuresColumnSizes

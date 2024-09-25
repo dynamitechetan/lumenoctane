@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Events;
+namespace Twid\Octane\Events;
 
 use Laravel\Lumen\Application;
-use Laravel\Octane\Contracts\OperationTerminated;
+use Twid\Octane\Contracts\OperationTerminated;
 
 class TaskTerminated implements OperationTerminated
 {

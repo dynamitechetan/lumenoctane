@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Illuminate\Contracts\Http\Kernel;
 use Laravel\Lumen\Application;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
-use Laravel\Octane\Events\RequestHandled;
-use Laravel\Octane\Events\RequestReceived;
-use Laravel\Octane\Events\RequestTerminated;
-use Laravel\Octane\Facades\Octane;
+use Twid\Octane\Events\RequestHandled;
+use Twid\Octane\Events\RequestReceived;
+use Twid\Octane\Events\RequestTerminated;
+use Twid\Octane\Facades\Octane;
 use Symfony\Component\HttpFoundation\Response;
 
 class ApplicationGateway

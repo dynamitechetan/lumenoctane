@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Illuminate\Http\Request;
 use Laminas\Diactoros\ResponseFactory;

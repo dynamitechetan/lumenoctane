@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Octane\Concerns;
+namespace Twid\Octane\Concerns;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Cache;
-use Laravel\Octane\Events\TickReceived;
-use Laravel\Octane\Swoole\InvokeTickCallable;
+use Twid\Octane\Events\TickReceived;
+use Twid\Octane\Swoole\InvokeTickCallable;
 
 trait RegistersTickHandlers
 {
@@ -17,7 +17,7 @@ trait RegistersTickHandlers
      * @param  callable  $callback
      * @param  int  $seconds
      * @param  bool  $immediate
-     * @return \Laravel\Octane\Swoole\InvokeTickCallable
+     * @return \Twid\Octane\Swoole\InvokeTickCallable
      */
     public function tick(string $key, callable $callback, int $seconds = 1, bool $immediate = true)
     {

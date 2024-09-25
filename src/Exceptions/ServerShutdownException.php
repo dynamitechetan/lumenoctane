@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Exceptions;
+namespace Twid\Octane\Exceptions;
 
 use Exception;
 

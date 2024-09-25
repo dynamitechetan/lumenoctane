@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Octane\Swoole\Handlers;
+namespace Twid\Octane\Swoole\Handlers;
 
-use Laravel\Octane\Swoole\SwooleExtension;
+use Twid\Octane\Swoole\SwooleExtension;
 
 class OnManagerStart
 {

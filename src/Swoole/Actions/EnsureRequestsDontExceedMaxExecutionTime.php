@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Octane\Swoole\Actions;
+namespace Twid\Octane\Swoole\Actions;
 
-use Laravel\Octane\Swoole\SwooleExtension;
+use Twid\Octane\Swoole\SwooleExtension;
 use Swoole\Http\Response;
 use Swoole\Http\Server;
 

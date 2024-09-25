@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Contracts;
+namespace Twid\Octane\Contracts;
 
 use Illuminate\Http\Request;
-use Laravel\Octane\RequestContext;
+use Twid\Octane\RequestContext;
 
 interface Worker
 {
@@ -18,7 +18,7 @@ interface Worker
      * Handle an incoming request and send the response to the client.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Laravel\Octane\RequestContext  $context
+     * @param  \Twid\Octane\RequestContext  $context
      * @return void
      */
     public function handle(Request $request, RequestContext $context): void;

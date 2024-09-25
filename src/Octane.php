@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Exception;
-use Laravel\Octane\Swoole\WorkerState;
+use Twid\Octane\Swoole\WorkerState;
 use Swoole\Http\Server;
 use Swoole\Table;
 use Throwable;

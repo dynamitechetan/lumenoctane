@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Contracts;
+namespace Twid\Octane\Contracts;
 
 use Laravel\Lumen\Application;;
 

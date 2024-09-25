@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Lumen\Application;

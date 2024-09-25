@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Octane\Concerns;
+namespace Twid\Octane\Concerns;
 
 trait ProvidesDefaultConfigurationOptions
 {
@@ -12,14 +12,14 @@ trait ProvidesDefaultConfigurationOptions
     public static function prepareApplicationForNextRequest(): array
     {
         return [
-            \Laravel\Octane\Listeners\FlushLocaleState::class,
-            \Laravel\Octane\Listeners\FlushQueuedCookies::class,
-            \Laravel\Octane\Listeners\FlushSessionState::class,
-            \Laravel\Octane\Listeners\FlushAuthenticationState::class,
-            \Laravel\Octane\Listeners\EnforceRequestScheme::class,
-            \Laravel\Octane\Listeners\EnsureRequestServerPortMatchesScheme::class,
-            \Laravel\Octane\Listeners\GiveNewRequestInstanceToApplication::class,
-            \Laravel\Octane\Listeners\GiveNewRequestInstanceToPaginator::class,
+            \Twid\Octane\Listeners\FlushLocaleState::class,
+            \Twid\Octane\Listeners\FlushQueuedCookies::class,
+            \Twid\Octane\Listeners\FlushSessionState::class,
+            \Twid\Octane\Listeners\FlushAuthenticationState::class,
+            \Twid\Octane\Listeners\EnforceRequestScheme::class,
+            \Twid\Octane\Listeners\EnsureRequestServerPortMatchesScheme::class,
+            \Twid\Octane\Listeners\GiveNewRequestInstanceToApplication::class,
+            \Twid\Octane\Listeners\GiveNewRequestInstanceToPaginator::class,
         ];
     }
 
@@ -31,34 +31,34 @@ trait ProvidesDefaultConfigurationOptions
     public static function prepareApplicationForNextOperation(): array
     {
         return [
-            \Laravel\Octane\Listeners\CreateConfigurationSandbox::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToAuthorizationGate::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToBroadcastManager::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToDatabaseManager::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToDatabaseSessionHandler::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToFilesystemManager::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToHttpKernel::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToMailManager::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToNotificationChannelManager::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToPipelineHub::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToQueueManager::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToRouter::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToValidationFactory::class,
-            \Laravel\Octane\Listeners\GiveNewApplicationInstanceToViewFactory::class,
-            \Laravel\Octane\Listeners\FlushDatabaseRecordModificationState::class,
-            \Laravel\Octane\Listeners\FlushDatabaseQueryLog::class,
-            \Laravel\Octane\Listeners\RefreshQueryDurationHandling::class,
-            \Laravel\Octane\Listeners\FlushLogContext::class,
-            \Laravel\Octane\Listeners\FlushArrayCache::class,
-            \Laravel\Octane\Listeners\FlushMonologState::class,
-            \Laravel\Octane\Listeners\FlushStrCache::class,
-            \Laravel\Octane\Listeners\FlushTranslatorCache::class,
+            \Twid\Octane\Listeners\CreateConfigurationSandbox::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToAuthorizationGate::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToBroadcastManager::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToDatabaseManager::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToDatabaseSessionHandler::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToFilesystemManager::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToHttpKernel::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToMailManager::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToNotificationChannelManager::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToPipelineHub::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToQueueManager::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToRouter::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToValidationFactory::class,
+            \Twid\Octane\Listeners\GiveNewApplicationInstanceToViewFactory::class,
+            \Twid\Octane\Listeners\FlushDatabaseRecordModificationState::class,
+            \Twid\Octane\Listeners\FlushDatabaseQueryLog::class,
+            \Twid\Octane\Listeners\RefreshQueryDurationHandling::class,
+            \Twid\Octane\Listeners\FlushLogContext::class,
+            \Twid\Octane\Listeners\FlushArrayCache::class,
+            \Twid\Octane\Listeners\FlushMonologState::class,
+            \Twid\Octane\Listeners\FlushStrCache::class,
+            \Twid\Octane\Listeners\FlushTranslatorCache::class,
 
             // First-Party Packages...
-            \Laravel\Octane\Listeners\PrepareInertiaForNextOperation::class,
-            \Laravel\Octane\Listeners\PrepareLivewireForNextOperation::class,
-            \Laravel\Octane\Listeners\PrepareScoutForNextOperation::class,
-            \Laravel\Octane\Listeners\PrepareSocialiteForNextOperation::class,
+            \Twid\Octane\Listeners\PrepareInertiaForNextOperation::class,
+            \Twid\Octane\Listeners\PrepareLivewireForNextOperation::class,
+            \Twid\Octane\Listeners\PrepareScoutForNextOperation::class,
+            \Twid\Octane\Listeners\PrepareSocialiteForNextOperation::class,
         ];
     }
 

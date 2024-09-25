@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Octane;
+namespace Twid\Octane;
 
-use Laravel\Octane\Stringable;
+use Twid\Octane\Stringable;
 
 class Str extends \Illuminate\Support\Str
 {
@@ -19,7 +19,7 @@ class Str extends \Illuminate\Support\Str
      * Get a new stringable object from the given string.
      *
      * @param  string  $string
-     * @return \Laravel\Octane\Stringable
+     * @return \Twid\Octane\Stringable
      */
     public static function of($string)
     {

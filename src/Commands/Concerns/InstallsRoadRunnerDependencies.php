@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Octane\Commands\Concerns;
+namespace Twid\Octane\Commands\Concerns;
 
 use Illuminate\Support\Str;
-use Laravel\Octane\RoadRunner\Concerns\FindsRoadRunnerBinary;
+use Twid\Octane\RoadRunner\Concerns\FindsRoadRunnerBinary;
 use RuntimeException;
 use Spiral\RoadRunner\Http\PSR7Worker;
 use Symfony\Component\Process\Exception\ProcessSignaledException;
