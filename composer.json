@@ -1,5 +1,5 @@
 {
-    "name": "swooder/lumenoctane",
+    "name": "dynamitechetan/lumenoctane",
     "description": "Supercharge your Lumen application's performance.",
     "keywords": ["laravel", "octane", "roadrunner", "swoole"],
     "license": "MIT",
@@ -9,8 +9,8 @@
     },
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "",
+            "email": ""
         }
     ],
     "require": {
@@ -33,9 +33,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Octane\\": "src"
+            "Twid\\Octane\\": "src/"
         }
     },
+
     
     "extra": {
        
